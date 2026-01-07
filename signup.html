@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <h2>Please Signup Here</h2>
+
+    <form onsubmit="return validateForm()">
+      <label>Username:</label>
+      <input type="text" id="username" /><br /><br />
+      <label>Password:</label>
+      <input type="password" id="password" /><br /><br />
+      <label>Confirm Password:</label>
+      <input type="password" id="confirmPassword" /><br /><br />
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female <br /><br />
+      <label>Mobile Number:</label>
+      <input type="text" id="mobile" /><br /><br />
+      <label>Date of Birth:</label>
+      <input type="date" id="dob" /><br /><br />
+      <label>Address:</label>
+      <textarea id="address" rows="4" cols="40"></textarea><br /><br />
+      <label>Qualification:</label>
+      <select id="qualification">
+        <option value="">Select</option>
+        <option>B.Tech</option>
+        <option>MCA</option>
+        <option>B.Sc</option></select
+      ><br /><br />
+      <label>Choose your Skills:</label>
+      <input type="checkbox" class="skills" value="Java" /> Java
+      <input type="checkbox" class="skills" value="HTML" /> HTML
+      <input type="checkbox" class="skills" value="CSS" /> CSS
+      <input type="checkbox" class="skills" value="JavaScript" /> JavaScript
+      <br /><br />
+
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <script src="signup.js"></script>
+  </body>
+</html>
